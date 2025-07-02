@@ -1,6 +1,6 @@
 
 
-module test_mips32();
+module test1_mips32();
 
 reg clk1, clk2;
 integer k;
