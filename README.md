@@ -22,9 +22,9 @@ This repository implements a **5-stage pipelined MIPS32 processor** using Verilo
 |--------------|---------------------------------------------|
 | `src/`       | CPU source modules (`pipe_MIPS32.v`)        |
 | `testbenches/` | Simulation testbenches (`*.v`)             |
-| `waveforms/` | Xilinx Vivado waveform windows files (optional)            |
+| `waveforms/` | Xilinx Vivado waveforms            |
 | `docs/`      | Diagrams and analysis notes                 |
-| `mem_init/`  | Pre-written memory dumps (optional)         |
+| `mem_init/`  | Pre-written memory dumps         |
 
 ## Testbenches
 
