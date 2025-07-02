@@ -31,6 +31,7 @@ This repository implements a **5-stage pipelined MIPS32 processor** using Verilo
 ### `test2_mips32.v` (Load/Add/Store)
 Loads value from memory[120], adds 45, and stores to memory[121].
 
+
 ### `test_mips32.v` (Arithmetic Chaining)
 - `ADDI R1, R0, 10`
 - `ADDI R2, R0, 20`
@@ -39,7 +40,22 @@ Loads value from memory[120], adds 45, and stores to memory[121].
 - `ADD R5, R4, R3`
 - HALT
 
-Displays values of R0–R5 at the end.
+### `test3_mips32.v` — Factorial Computation
+
+This testbench reads a number `N` from memory location 200 and computes its factorial using a loop and multiply-subtract-branch logic. The result is stored in memory location 198.
+
+Registers Used:
+- `R10`: Address pointer to memory
+- `R3`: Loop counter (initial `N`)
+- `R2`: Factorial accumulator
+
+Verifies:
+✅ Load/Store  
+✅ MUL, SUBI, BNEQZ  
+✅ Looping and memory output
+
+
+
 
 ## Simulating with Icarus Verilog
 
